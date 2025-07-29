@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Base64 to PDF Converter</title>
+  <link rel="icon" type="image/x-icon" href="./assets/pdf.png">
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="main-layout">
+    <div class="input-section">
+      <div class="container">
+        <h1>Base64 to PDF Converter</h1>
+
+        <label for="pdfName">PDF File Name (optional):</label>
+        <input type="text" id="pdfName" placeholder="e.g., my-document" />
+
+        <label for="base64Input">Base64 Encoded PDF:</label>
+        <textarea id="base64Input" placeholder="Paste your Base64 encoded PDF here"></textarea>
+
+        <button onclick="previewPDF()">Convert & Preview</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <div class="preview-section">
+      <iframe id="pdfPreview" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Sticky Footer -->
+  <footer class="footer">
+    <p>Made by <strong>Ishan</strong> with <i class="fas fa-heart heart-icon"></i> | © 2025 All Rights Reserved</p>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
